@@ -127,19 +127,19 @@ export function Hero() {
                 </div>
               </motion.div>
 
-              <motion.div
+              {/* <motion.div
                 animate={{ y: [0, -8, 0] }}
                 transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
                 className="absolute bottom-24 left-6 glass rounded-2xl px-4 py-3"
-              >
+              > */}
                 {/* <div className="text-[10px] uppercase tracking-widest text-muted-foreground">Rated by 5,000+ clients</div> */}
-                <div className="mt-1 flex items-center gap-1">
+                {/* <div className="mt-1 flex items-center gap-1">
                   {Array.from({ length: 5 }).map((_, i) => (
                     <span key={i} className="text-cyan-bright">★</span>
                   ))}
                   <span className="ml-2 text-xs font-semibold text-navy-deep">4.9</span>
-                </div>
-              </motion.div>
+                </div> */}
+              {/* </motion.div> */}
             </div>
 
             {/* Snowflake particles */}
