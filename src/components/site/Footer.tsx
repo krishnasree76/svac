@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Youtube, Phone, Mail } from "lucide-react";
+import { Facebook, Instagram, Youtube, Phone, Mail,Heart } from "lucide-react";
 import logo from "@/assets/logo.png";
 
 export function Footer() {
@@ -19,7 +19,7 @@ export function Footer() {
     S.V. AC Solutions — Cooling, care, and complete home solutions delivered by a team you can trust.
   </p>
 
-  <div className="mt-6 flex gap-3">
+  {/* <div className="mt-6 flex gap-3">
     {[Facebook, Instagram, Youtube].map((I, i) => (
       <a
         key={i}
@@ -29,7 +29,7 @@ export function Footer() {
         <I className="h-4 w-4" />
       </a>
     ))}
-  </div>
+  </div> */}
 </div>
 
           <div>
@@ -61,6 +61,23 @@ export function Footer() {
             </ul>
           </div>
         </div>
+
+        <div className="flex justify-center items-center gap-2">
+            Made with <Heart className="inline h-4 w-4 text-red-500 mx-1" /> by
+            <a
+              href="https://staffarc.in"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1 text-orange-600 hover:underline"
+            >
+              <img
+                src="https://www.staffarc.in/images/Staffarc-logo.png"
+                alt="StaffArc logo"
+                className="h-5 w-5 object-contain"
+              />
+              StaffArc
+            </a>
+          </div>
 
         <div className="mt-14 flex flex-col-reverse items-center justify-between gap-4 border-t border-white/10 pt-6 text-xs text-white/50 md:flex-row">
           <div>© {new Date().getFullYear()} S.V. AC Solutions. All rights reserved.</div>
